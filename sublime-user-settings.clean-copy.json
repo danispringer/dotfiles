@@ -1,0 +1,31 @@
+/*******
+Sublime User
+ Settings in here override those in "Default/Preferences.sublime-settings",
+ and are overridden in turn by file type specific settings.
+ ********/
+{
+    "autocomplete": true,
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "draw_white_space": "all",
+    "font_size": 17,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "save_on_focus_lost": true,
+    "highlight_modified_tabs": true,
+    "scroll_past_end": true
+ }
+
+
+ // multiple monitors: "use_simple_full_screen": true
+
+// FREE:
+
+{
+    "line_numbers": true,
+    "gutter": true,
+    "draw_centered": true,
+    "wrap_width": 100,
+    "word_wrap": true,
+    "scroll_past_end": true
+}
