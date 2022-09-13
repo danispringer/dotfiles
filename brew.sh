@@ -61,13 +61,13 @@ brew cleanup
 # iMovie
 mas install 408981434
 # Logic Pro X
-mas install 634148309
+#mas install 634148309
 # Numbers
 mas install 409203825
 # Pages
 mas install 409201541
 # Shazam
-mas install 897118787
+#mas install 897118787
 # Telegram
 mas install 747648890
 # WhatsApp
