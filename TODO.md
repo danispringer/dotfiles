@@ -12,10 +12,6 @@
 - Restart Terminal. Changes should be applied.
 - Set Terminal default text size, text color, and background color
 - Install `brew`
-- create subl command (done)
-- install mgitstatus (done)
-- swiftlint (done)
-- apply sublime settings from preferences file in `dotfiles` repo: automatically?
 
 
 ## System Preferences
@@ -32,12 +28,10 @@
 - hide input keyboard in menu bar
 - show date
 
-
 ## Messages
 - Set messages default downloads folder
 - Set messages text size
 - Enable Messages in iCloud
-
 
 ## Mail
 - Set mail preferences including text size and signature
@@ -56,29 +50,17 @@
 - Set notes automatic sorting of checked items
 - Set notes default text size
 
-
 ## Safari
 - Set safari start page
 - Set Safari to reopen all non-private pages from last session
 - Set safari downloads folder
 - Show icons in tabs
-- Enable ABP extensions
+- Enable extensions
 - Enable developer menu
 
 ## Finder
 - Finder preferences: open new windows in documents
 
-
-## Non Mac App Store apps (moved to `brew.sh` using `curl`)
-- adblock plus (Extension, not app)
-- Uniconverter: ask wondershare to give you the app for free since you own the program, then add it to the list with its ID
-- Google Chrome
-
 ## Finally
 - Run `source brew.sh`, logout, restart
 - Run `source .macos`, logout, restart
-
-
-## Are these packages needed?
-- easy install
-- pip
