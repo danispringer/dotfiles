@@ -33,7 +33,7 @@ export NVM_DIR="$HOME/.nvm";
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion";
 
 # Aliases
-alias all='brew update; arch -x86_64 brew update; arch -x86_64 brew upgrade; softwareupdate -ia';
+alias all='brew cleanup; brew update; arch -x86_64 brew update; arch -x86_64 brew upgrade; softwareupdate -ia';
 alias brew86='arch -x86_64 brew ';
 alias r='cd /Users/dani/Documents/repos';
 alias dt='cd /Users/dani/Desktop';
