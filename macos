@@ -53,6 +53,8 @@ sudo pmset displaysleep 5
 # Wake on lid opened
 sudo pmset lidwake 1
 
+# TODO: run 'defaults read' to see all that is possible, update file accordingly
+
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
@@ -566,7 +568,7 @@ defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Download newly available updates in background" TODO
-defaults write com.apple.SoftwareUpdate AutomaticDownload -int 0
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 
 # Install System data files & security updates"
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
