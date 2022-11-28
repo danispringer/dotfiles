@@ -6,9 +6,6 @@ export EDITOR='subl -w';
 
 export PATH="$HOME/Documents/repos/dotfiles:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:s$PATH"
 
-# Customize git prompt, See git-prompt.zsh file
-#source /Users/dani/Documents/repos/dotfiles/git-prompt.zsh;
-
 # Add a '*' to the branch name if the branch has been changed
 #export GIT_PS1_SHOWDIRTYSTATE=1;
 
@@ -38,6 +35,7 @@ alias r='cd /Users/dani/Documents/repos';
 alias dt='cd /Users/dani/Desktop';
 alias d='cd /Users/dani/Documents/repos/dotfiles';
 alias mgs='mgitstatus -e --depth=0';
+alias ..='cd ../';
 # alias podup='''ls -d *  | xargs -I {} bash -c 'cd '{}' && echo '{}' && pod install --repo-update'''';
 alias gs='git status';
 alias ga='git add';
@@ -77,7 +75,8 @@ fi
 # Add ${colorflag} for colored output
 
 alias l='ls -F ${colorflag}';
-alias ls='ls -AF ${colorflag}';
+alias la='ls -AF ${colorflag}';
+alias l1='ls -1AF ${colorflag}';
 
 # Go to projects folder, where I usually want to be
 r;
