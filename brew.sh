@@ -6,7 +6,11 @@
 # Ask for the administrator password upfront
 sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.brew.sh` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+done 2>/dev/null &
 
 # M1 - https://stackoverflow.com/a/64997047/5306470
 # Before installing Homebrew you will need Rosetta2 (for M1):
@@ -27,6 +31,7 @@ brew install chargepoint/xcparse/xcparse
 brew install --cask google-chrome
 brew install --cask sf-symbols
 brew install git-open
+brew install shfmt
 brew link git-open
 brew install multi-git-status
 chmod 755 /usr/local/bin/mgitstatus
@@ -46,7 +51,7 @@ git config --global pull.rebase false
 
 echo "The mere presence of this file in the HOME (~) directory disables the system copyright
 notice, the date and time of the last login, the message of the day as well as other
-information that may otherwise appear on login. See man login" > .hushlogin
+information that may otherwise appear on login. See man login" >.hushlogin
 mv .hushlogin ~/
 
 # To install Mac App Store apps via terminal
