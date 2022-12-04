@@ -11,7 +11,11 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+done 2>/dev/null &
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -181,7 +185,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 # sudo systemsetup -settimezone "America/New_York" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2>/dev/null
 
 ###############################################################################
 # Screen                                                                      #
@@ -662,7 +666,7 @@ for app in "Activity Monitor" \
     "SystemUIServer" \
     "Sublime Text" \
     "iCal"; do
-    killall "${app}" &> /dev/null
+    killall "${app}" &>/dev/null
 done
 
 echo "Done. Quit Terminal, logout, and restart Mac to ensure all changes take place."
