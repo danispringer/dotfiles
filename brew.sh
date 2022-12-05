@@ -26,12 +26,12 @@ arch -x86_64 brew update
 arch -x86_64 brew upgrade
 BREW_PREFIX=$(brew --prefix)
 brew install shellcheck
+brew install shfmt # for shellcheck
 brew install swiftlint
 brew install chargepoint/xcparse/xcparse
 brew install --cask google-chrome
 brew install --cask sf-symbols
 brew install git-open
-brew install shfmt
 brew link git-open
 brew install multi-git-status
 chmod 755 /usr/local/bin/mgitstatus
