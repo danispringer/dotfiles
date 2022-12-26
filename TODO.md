@@ -1,7 +1,7 @@
 # Todo After Resetting Mac
 
 ###### TODO: try to automate as many as possible with code
-###### Done = tasks which seem to be working with with code
+###### Done = tasks which seem to be working with code
 ###### Note: many settings not listed here might be taken care of in `.macos`
 
 - Enable full disk access to terminal
@@ -44,7 +44,7 @@
 
 ## Desktop
 - Set desktop text size
-- Set desktop sort to date modified
+- Set desktop sorting to date modified
 
 ## Notes
 - Set notes automatic sorting of checked items
@@ -62,5 +62,6 @@
 - Finder preferences: open new windows in documents
 
 ## Finally
-- Run `source brew.sh`, logout, restart
-- Run `source .macos`, logout, restart
+- Run `brew.sh`, logout, restart
+- Run `.macos`, logout, restart
+- (No need to prefix with `source` if files were made executable using `chmod +x FILENAMEHERE`)
