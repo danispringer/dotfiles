@@ -73,7 +73,5 @@ mas install 409203825
 mas install 409201541
 # Shazam
 #mas install 897118787
-# Telegram
-mas install 747648890
 # WhatsApp
 mas install 1147396723
