@@ -48,6 +48,7 @@ git config --global core.untrackedCache true
 git config --global color.ui true
 git config --global help.autocorrect 1
 git config --global pull.rebase false
+git config --global push.autoSetupRemote true
 
 echo "The mere presence of this file in the HOME (~) directory disables the system copyright
 notice, the date and time of the last login, the message of the day as well as other
