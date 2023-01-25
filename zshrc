@@ -49,6 +49,7 @@ alias gba='git branch -a'
 alias cc='xcodebuild clean; rm -rf ~/Library/Developer/Xcode/DerivedData'
 alias path='<<<${(F)path}'
 alias ap='open *.xcodeproj'
+alias op='open *.xcworkspace'
 alias swiftlint='swiftlint --quiet'
 
 # Show/hide hidden files in Finder
