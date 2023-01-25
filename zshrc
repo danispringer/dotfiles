@@ -51,6 +51,7 @@ alias path='<<<${(F)path}'
 alias ap='open *.xcodeproj'
 alias op='open *.xcworkspace'
 alias swiftlint='swiftlint --quiet'
+alias work='cd /Users/dani/Documents/repos/merkos/chabadPlus_iOS/c-kids'
 
 # Show/hide hidden files in Finder
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
