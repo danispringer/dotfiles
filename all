@@ -20,8 +20,6 @@ echo "will cleanup#2"
 brew cleanup
 echo "will update#2"
 arch -x86_64 brew update
-echo "will cleanup#3"
-brew cleanup
 echo "will upgrade#1"
 arch -x86_64 brew upgrade
 echo "will update macos#1"
