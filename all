@@ -12,17 +12,10 @@ while true; do
     sleep 60
     kill -0 "$$" || exit
 done 2>/dev/null &
-echo "will cleanup#1"
 brew cleanup
-echo "will update#1"
 brew update
-echo "will cleanup#2"
 brew cleanup
-echo "will update#2"
 arch -x86_64 brew update
-echo "will cleanup#3"
 brew cleanup
-echo "will upgrade#1"
 arch -x86_64 brew upgrade
-echo "will update macos#1"
 softwareupdate -ia
