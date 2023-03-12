@@ -6,12 +6,12 @@
 
 - Enable full disk access to terminal
 - Ensure repos has been downloaded from iCloud
-- Set default Terminal profile to `zsh`
 - Create a file named `.zshrc` in `~`
 - Copy snippet from bottom of repos `.zshrc` to `~` `.zshrc`
 - Restart Terminal. Changes should be applied.
 - Set Terminal default text size, text color, and background color
 - Install `brew`
+- Allow Touch ID to sudo
 
 
 ## System Preferences
@@ -24,7 +24,7 @@
 - set trackpad touch to click
 - set trackpad bottom right corner to secondary click
 - swap ctrl and command keys
-- hide siri in menu bar
+- hide Siri in menu bar
 - hide input keyboard in menu bar
 - show date
 
