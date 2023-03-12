@@ -21,21 +21,17 @@ done 2>/dev/null &
 #arch -x86_64 brew install <package>
 
 # BREW
-brew update
+arch -x86_64 brew update
 arch -x86_64 brew update
 arch -x86_64 brew upgrade
 BREW_PREFIX=$(brew --prefix)
-brew install shellcheck
-brew install shfmt # for shellcheck
-brew install swiftlint
-brew install chargepoint/xcparse/xcparse
-brew install --cask google-chrome
-brew install --cask sf-symbols
-brew install git-open
-brew link git-open
-brew install multi-git-status
+arch -x86_64 brew install --cask google-chrome
+arch -x86_64 brew install --cask sf-symbols
+arch -x86_64 brew install git-open
+arch -x86_64 brew link git-open
+arch -x86_64 brew install multi-git-status
 chmod 755 /usr/local/bin/mgitstatus
-brew install --cask sublime-text
+brew86 --cask sublime-text
 # Make subl work. See: https://stackoverflow.com/a/17731879/5306470
 ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
@@ -54,16 +50,21 @@ echo "The mere presence of this file in the HOME (~) directory disables the syst
 notice, the date and time of the last login, the message of the day as well as other
 information that may otherwise appear on login. See man login" >.hushlogin
 mv .hushlogin ~/
-
 # To install Mac App Store apps via terminal
-brew install mas
+brew86 install mas
 
 # Remove outdated versions from the cellar.
-brew cleanup
+brew86 cleanup
 
 # Mac App Store (https://github.com/mas-cli/mas)
 # Xcode
-#mas install 497799835
+mas install 497799835
+
+########## These 2 need Xcode to be installed first
+arch -x86_64 brew install swiftlint
+arch -x86_64 brew install chargepoint/xcparse/xcparse
+##########
+
 # iMovie
 mas install 408981434
 # Logic Pro X
@@ -75,4 +76,4 @@ mas install 409201541
 # Shazam
 #mas install 897118787
 # WhatsApp
-mas install 1147396723
+#mas install 1147396723 (get M1 beta)
