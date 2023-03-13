@@ -1,27 +1,27 @@
 # Todo After Resetting Mac
 
 ###### TODO: try to automate as many as possible with code
-###### Done = tasks which seem to be working with code
 ###### Note: many settings not listed here might be taken care of in `.macos`
 
-- Enable full disk access to terminal
+### Yet To Automate
+- Enable full disk access to Terminal
 - Ensure repos has been downloaded from iCloud
 - Create a file named `.zshrc` in `~`
 - Copy snippet from bottom of repos `.zshrc` to `~` `.zshrc`
 - Restart Terminal. Changes should be applied.
 - Set Terminal default text size, text color, and background color
-- Install `brew`
+- Install `brew` **for M1**
 - Allow Touch ID to sudo
 
 
 ## System Preferences
 - Set MacBook name
 - Check checkbox to automatically keep Mac up to date
-- Set sound check
-- Require password immediately after sleep begins (done)
+- Set sound check to off
 - Set lock screen message
 - set cursor size
 - set trackpad touch to click
+- set trackpad force touch to off
 - set trackpad bottom right corner to secondary click
 - swap ctrl and command keys
 - hide Siri in menu bar
@@ -62,6 +62,6 @@
 - Finder preferences: open new windows in documents
 
 ## Finally
-- Run `brew.sh`, logout, restart
+- Run `batch-install-via-brew`, logout, restart
 - Run `.macos`, logout, restart
 - (No need to prefix with `source` if files were made executable using `chmod +x FILENAMEHERE`)
