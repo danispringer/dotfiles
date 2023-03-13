@@ -15,7 +15,6 @@ done 2>/dev/null &
 brew cleanup
 brew update
 brew cleanup
-arch -x86_64 brew update
+brew upgrade
 brew cleanup
-arch -x86_64 brew upgrade
 softwareupdate -ia
