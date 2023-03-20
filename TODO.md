@@ -13,6 +13,8 @@
 - Install `brew` **for M1**
 - Allow Touch ID to sudo
 
+Add alias: https://stackoverflow.com/a/16957078
+
 
 ## System Preferences
 - Set MacBook name
