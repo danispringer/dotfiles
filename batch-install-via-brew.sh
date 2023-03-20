@@ -16,11 +16,14 @@ brew upgrade
 BREW_PREFIX=$(brew --prefix)
 brew install --cask google-chrome
 brew install --cask sf-symbols
+brew install --cask zoom
 brew install git-open
 brew link git-open
 brew install multi-git-status
 chmod 755 /usr/local/bin/mgitstatus
 brew install --cask sublime-text
+brew install --cask app-tamer
+brew install --cask obs
 # Make subl work. See: https://stackoverflow.com/a/17731879/5306470
 ln -sv "/Applications/Sublime Text.app/Contents/\
 SharedSupport/bin/subl" /usr/local/bin/subl
