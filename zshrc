@@ -28,6 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Aliases
 alias ..='cd ../'
+alias all='upallbrews'
 alias ap='open *.xcodeproj'
 alias cc='xcodebuild clean; rm -rf ~/Library/Developer/Xcode/DerivedData'
 alias d='cd /Users/dani/Documents/repos/dotfiles'
