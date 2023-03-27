@@ -24,6 +24,7 @@ chmod 755 /usr/local/bin/mgitstatus
 brew install --cask sublime-text
 brew install --cask app-tamer
 brew install --cask obs
+brew install youtube-dl
 # Make subl work. See: https://stackoverflow.com/a/17731879/5306470
 ln -sv "/Applications/Sublime Text.app/Contents/\
 SharedSupport/bin/subl" /usr/local/bin/subl
