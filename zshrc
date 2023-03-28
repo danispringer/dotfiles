@@ -53,7 +53,7 @@ alias r='cd /Users/dani/Documents/repos'
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool true \
 && killall Finder' # Show/hide hidden files in Finder
 alias sudo='sudo ' # Enable aliases to be sudo’ed
-alias swiftlint='swiftlint --quiet'
+alias swiftlint='swiftlint --reporter relative-path --quiet';
 
 # Detect which `ls` flavor is in use
 if ls --color >/dev/null 2>&1; then # GNU `ls`
