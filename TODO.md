@@ -11,7 +11,7 @@
 - Restart Terminal. Changes should be applied.
 - Set Terminal default text size, text color, and background color
 - Install `brew` **for M1**
-- Allow Touch ID to sudo
+- Allow Touch ID to sudo: Add as 2nd line of `/etc/pam.d/sudo`: `auth sufficient pam_tid.so`
 
 Add alias: https://stackoverflow.com/a/16957078
 
