@@ -4,7 +4,7 @@
 # To make subl work, see https://stackoverflow.com/a/17731879/5306470
 export EDITOR='subl -w'
 export PATH="/opt/homebrew/bin:$HOME/Documents/repos/dotfiles:/usr/bin:/bin\
-:/usr/sbin:/sbin:$PATH"
+:/usr/sbin:/sbin:/opt/homebrew/sbin:$PATH"
 
 autoload -Uz compinit && compinit
 PS1='%1~ %# '
