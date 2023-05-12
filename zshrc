@@ -77,6 +77,7 @@ fi
 alias l='ls -F ${colorflag}'
 alias la='ls -AF ${colorflag}'
 alias l1='ls -1AF ${colorflag}'
+alias la1='ls -1AF ${colorflag}'
 
 # Go to projects folder, where I usually want to be
 r
