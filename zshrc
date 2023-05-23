@@ -14,27 +14,15 @@ autoload -Uz compinit && compinit
 PS1='%1~ %# '
 export PS1
 
-# Customize man pages colors (I think)
-# export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # green
-export LESS_TERMCAP_md=$(tput bold; tput setaf 6) # cyan
-# export LESS_TERMCAP_me=$(tput sgr0)
-# export LESS_TERMCAP_so=$(tput bold; tput setaf 3; tput setab 4) # yellow on blue
-# export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
-# export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 7) # white
-# export LESS_TERMCAP_ue=$(tput rmul; tput sgr0)
-# export LESS_TERMCAP_mr=$(tput rev)
-# export LESS_TERMCAP_mh=$(tput dim)
-# export LESS_TERMCAP_ZN=$(tput ssubm)
-# export LESS_TERMCAP_ZV=$(tput rsubm)
-# export LESS_TERMCAP_ZO=$(tput ssupm)
-# export LESS_TERMCAP_ZW=$(tput rsupm)
+# Customize man pages color
+export LESS_TERMCAP_md=$(tput bold; tput setaf 1)
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
-# This loads nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# export NVM_DIR="$HOME/.nvm"
+# # This loads nvm
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# # This loads nvm bash_completion
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Aliases
 alias ..='cd ../'
@@ -55,7 +43,7 @@ alias gs='git status'
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false \
 && killall Finder' # Show/hide hidden files in Finder
 alias mgs='mgitstatus -e --depth=0'
-alias op='open *.xcworkspace'
+# alias op='open *.xcworkspace'
 alias path='<<<${(F)path}'
 #alias podup='''ls -d *  | xargs -I {} bash -c 'cd '{}' && echo '{}' && \
 #pod install --repo-update'''';
@@ -65,29 +53,12 @@ alias show='defaults write com.apple.finder AppleShowAllFiles -bool true \
 alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias swiftlint='swiftlint --reporter relative-path --quiet';
 
-# Detect which `ls` flavor is in use
-if ls --color >/dev/null 2>&1; then # GNU `ls`
-    colorflag="--color"
-    export LS_COLORS="no=00:fi=00:di=01;31:ln=01;36:pi=40;33:so=01;35:do=01;35\
-    :bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.\
-    arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=\
-    01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg\
-    =01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=\
-    01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=\
-    01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;\
-    35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:"
-else # macOS `ls`
-    colorflag="-G"
-    export LSCOLORS="FxFxhxDxfxhxhxhxhxcxcx"
-fi
-
-# Run 'man ls' in help
-# Add ${colorflag} for colored output
-
-alias l='ls -F ${colorflag}'
-alias la='ls -AF ${colorflag}'
-alias l1='ls -1AF ${colorflag}'
-alias la1='ls -1AF ${colorflag}'
+# Make ls output colored
+alias ls='ls -G'
+alias l='ls -G'
+alias la='ls -AG'
+alias l1='ls -1AG'
+alias la1='ls -1AG'
 
 # Go to projects folder, where I usually want to be
 r
