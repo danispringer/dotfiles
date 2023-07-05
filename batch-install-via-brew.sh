@@ -74,6 +74,7 @@ mas install 409201541
 
 # WhatsApp
 #mas install 1147396723 (get M1 beta)
+echo GET WA M1 BETA
 
 # Spotify
 brew install spotify
