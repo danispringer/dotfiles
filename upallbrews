@@ -12,9 +12,7 @@ while true; do
     sleep 60
     kill -0 "$$" || exit
 done 2>/dev/null &
-brew cleanup
 brew update
-brew cleanup
 brew upgrade
 brew cleanup
-softwareupdate -ia
+# softwareupdate -ia
