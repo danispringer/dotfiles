@@ -12,7 +12,5 @@
 #     sleep 60
 #     kill -0 "$$" || exit
 # done 2>/dev/null &
-brew update
-brew upgrade
-brew cleanup
+brew update & brew upgrade & brew cleanup;
 # softwareupdate -ia
