@@ -53,6 +53,9 @@ alias show='defaults write com.apple.finder AppleShowAllFiles -bool true \
 alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias swiftlint='swiftlint --reporter relative-path --quiet';
 
+# yt-dlp "https://www.youtube.com/watch?v=FIEbMsOm-Uo" -f mp4
+# seems to take low quality
+
 # Make ls output colored
 alias ls='ls -G'
 alias l='ls -G'
