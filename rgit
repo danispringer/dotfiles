@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# This file lets you run a git command in multiple directories
+# (or any command, if you remove "git" near the end of the line)
+
+read 'command?Enter git command and press enter: (ex.: status) '
+
+# Change the below path to the parent folder of your git repositories
+mypath="/Users/dani/Documents/repos";
+find $mypath -maxdepth 1 -type d -not -path $mypath -exec bash -c "cd '{}' && echo '{}' && git $command" \;
+
+echo Done
