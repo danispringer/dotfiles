@@ -627,9 +627,13 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 
 # Disable the all too sensitive backswipe on trackpads"
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-
 # Disable the all too sensitive backswipe on Magic Mouse"
 defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
+# Disable the all too sensitive backswipe on trackpads"
+defaults write com.brave.Browser AppleEnableSwipeNavigateWithScrolls -bool false
+# Disable the all too sensitive backswipe on Magic Mouse"
+defaults write com.brave.Browser AppleEnableMouseSwipeNavigateWithScrolls -bool false
+
 
 # Use the system-native print preview dialog"
 # FIXME: this causes chrome to say it's managed by an admin
