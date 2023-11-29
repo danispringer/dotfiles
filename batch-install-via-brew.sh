@@ -25,6 +25,7 @@ brew install --cask sublime-text
 brew install --cask app-tamer
 brew install --cask obs
 brew install youtube-dl
+brew install --cask signal
 # Make subl work. See: https://stackoverflow.com/a/17731879/5306470
 ln -sv "/Applications/Sublime Text.app/Contents/\
 SharedSupport/bin/subl" /usr/local/bin/subl
@@ -71,9 +72,6 @@ mas install 409201541
 
 # Shazam
 #mas install 897118787
-
-# WhatsApp
-mas install 1147396723
 
 # Spotify
 brew install spotify
