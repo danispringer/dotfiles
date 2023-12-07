@@ -14,7 +14,7 @@ done 2>/dev/null &
 brew update
 brew upgrade
 BREW_PREFIX=$(brew --prefix)
-brew install --cask google-chrome
+brew install --cask brave-browser
 brew install --cask sf-symbols
 brew install --cask zoom
 brew install git-open
