@@ -12,5 +12,5 @@ while true; do
     sleep 60
     kill -0 "$$" || exit
 done 2>/dev/null &
-brew cleanup & brew update & brew upgrade & brew cleanup;
+brew cleanup & brew update & brew upgrade & brew autoremove & brew cleanup;
 softwareupdate -ia
