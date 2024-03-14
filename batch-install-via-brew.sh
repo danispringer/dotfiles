@@ -74,7 +74,7 @@ mas install 409201541
 #mas install 897118787
 
 # Spotify
-brew install spotify
+#brew install spotify
 
 # Stockfish
 mas install 801463932
