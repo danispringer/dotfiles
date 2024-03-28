@@ -13,4 +13,4 @@ while true; do
     kill -0 "$$" || exit
 done 2>/dev/null &
 brew cleanup & brew update & brew upgrade & brew autoremove & brew cleanup;
-softwareupdate -ia
+softwareupdate -l
